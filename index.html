@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angelica Joy Coyoca — UI/UX Designer</title>
+<meta name="description" content="Personal portfolio of Angelica Joy Coyoca, a UI/UX designer.">
+
+<!-- Google Fonts: Fraunces for headings, Manrope for body text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Scroll progress bar ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== Navigation ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">AC<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Home / Hero ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Angelica Joy Coyoca</h1>
+        <p class="hero-role">Aspiring UI/UX Designer</p>
+        <p class="hero-desc">
+          I create clean, thoughtful, and user-centered interfaces focused on making digital experiences intuitive, visually engaging, and easy to use.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="mailto:hello@jordanreyes.dev" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="hero-photo-frame">
+          <img src="images/me.jpg" alt="" onerror="this.parentElement.classList.add('no-image')">
+          <div class="frame-fallback"><i class="fa-solid fa-user"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="section-inner about-grid reveal">
+      <div class="about-photo">
+        <div class="about-photo-frame">
+          <img src="images/about.jpg" alt="Angelica Joy Coyoca" onerror="this.parentElement.classList.add('no-image')">
+          <div class="frame-fallback"><i class="fa-solid fa-user"></i></div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2 class="section-title">About me</h2>
+        <p class="about-text">
+          I'm an aspiring UI/UX Designer based in Tagum City, Davao del Norte, Philippines, passionate about creating clean, intuitive, and easy-to-use interfaces. I enjoy turning ideas into thoughtful designs that balance visual appeal, functionality, and a smooth user experience.
+        </p>
+        <p class="about-text">
+          I'm currently building my skills through personal projects and exploring different approaches to UI/UX design. I'm excited to start my career in UI/UX and create digital experiences that are both visually engaging and user-friendly.
+        </p>
+
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Tagum City, Davao Del Norte, Davao, Philippines</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Email</span>
+            <span class="fact-value">angelicajoycoyoca5@gmail.com</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Availability</span>
+            <span class="fact-value">Open to full-time opportunities</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Experience</span>
+            <span class="fact-value">No professional UI/UX experience</span>
+          </div>
+        </div>
+
+        <a href="resume/resume.pdf" download="Angelica-Coyoca-Resume.pdf" class="btn btn-outline btn-small">
+        <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner reveal">
+      <h2 class="section-title center">Skills</h2>
+      <p class="section-sub center">Skills and tools I use to create clean, intuitive, and user-centered digital experiences.</p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-display"></i> UI/UX Design</h3>
+          <div class="pill-list">
+            <span class="pill">UI Design</span>
+            <span class="pill">UX Design</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Wireframing</span>
+            <span class="pill">Prototyping</span>
+            <span class="pill">User-Centered Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-server"></i> Design Skills</h3>
+          <div class="pill-list">
+            <span class="pill">Visual Design</span>
+            <span class="pill">Layout Design</span>
+            <span class="pill">Typography</span>
+            <span class="pill">Color Theory</span>
+            <span class="pill">Canva</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-database"></i> Web Design</h3>
+          <div class="pill-list">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Responsive Design</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section">
+    <div class="section-inner reveal">
+      <h2 class="section-title center">Education</h2>
+      <p class="section-sub center">Where I picked up the fundamentals.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3 class="timeline-title">B.S. in Information Technology</h3>
+            <p class="timeline-sub">Cebu Technological University - Daanbantayan Campus</p>
+            <p class="timeline-desc">
+              Focused on information technology, web development, databases, and software projects. Graduated with a capstone project focused on a Smart ID Scanning System with Data Analytics.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021-2022</span>
+            <h3 class="timeline-title">Senior High School</h3>
+            <p class="timeline-sub">Lorenzo S. Sarmiento Sr. National High School</p>
+            <p class="timeline-desc">
+              Completed senior high school education and developed foundational knowledge and skills in preparation for higher education.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="section-inner reveal">
+      <h2 class="section-title center">Projects</h2>
+      <p class="section-sub center">A few things I've built recently.</p>
+
+      <!-- Loaded dynamically from MySQL via php/get_projects.php -->
+      <div class="projects-grid" id="projectsGrid">
+        <p class="projects-loading" id="projectsLoading">Loading projects…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience" class="section">
+    <div class="section-inner reveal">
+      <h2 class="section-title center">Experience</h2>
+      <p class="section-sub center">A quick look at where I've worked.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">January 2026 — May 2026</span>
+            <h3 class="timeline-title">Marketing Intern</h3>
+            <p class="timeline-sub">ITECH-RAR Solutions, Inc.</p>
+            <p class="timeline-desc">
+              Monitored multiple systems, reviewed information for discrepancies and anomalies, prepared documentation and reports, and coordinated information to support daily operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="section-inner reveal">
+      <h2 class="section-title center">Get in touch</h2>
+      <p class="section-sub center">Have a project in mind, or just want to say hi? Send a message below.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <span class="contact-info-label">Email</span>
+              <span class="contact-info-value">angelicajoycoyoca5@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-info-label">Phone</span>
+              <span class="contact-info-value">+63 991 927 1586</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-value">Tagum City, Davao Del Norte, Davao, Philippines</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project…" required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <!-- Honeypot field: hidden from real users, catches simple spam bots -->
+          <div class="form-row honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send message</span>
+            <i class="fa-solid fa-spinner fa-spin btn-spinner" style="display:none;"></i>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="nav-logo">AC<span>.</span></a>
+    <p class="footer-text">&copy; <span id="year"></span> Angelica Joy Coyoca. Built with HTML, CSS, JavaScript, PHP &amp; MySQL.</p>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
