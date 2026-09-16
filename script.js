@@ -124,7 +124,7 @@ async function loadProjects() {
   ];
 
   try {
-    const response = await fetch('php/get_projects.php');
+    const response = await fetch('get_projects.php');
     if (!response.ok) throw new Error('Request failed');
     const data = await response.json();
 
